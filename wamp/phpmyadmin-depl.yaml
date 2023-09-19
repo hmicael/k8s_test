@@ -20,11 +20,6 @@ spec:
         ports:
         - containerPort: 80
         env:
-        - name: PMA_HOST
-          valueFrom:
-            configMapKeyRef:
-              name: mysql-config
-              key: mysql-url
         - name: PMA_USER
           valueFrom:
             secretKeyRef:
